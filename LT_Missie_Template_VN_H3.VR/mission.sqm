@@ -51,12 +51,10 @@ addons[]=
 	"armor_f_vietnam_c",
 	"air_f_vietnam_c",
 	"ace_explosives",
-	"FIR_PilotCrewPack_US",
 	"ace_gforces",
 	"ace_parachute",
 	"armor_f_vietnam_03_c",
 	"air_f_vietnam_02_c",
-	"Characters_f_lxWS"
 };
 class AddonsMetaData
 {
