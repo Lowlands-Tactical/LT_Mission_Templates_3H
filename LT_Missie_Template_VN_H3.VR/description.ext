@@ -29,7 +29,7 @@ class Params
 	#if __has_include("\lt_template_base\Reference\descriptionMission.hpp")
 	#include "\lt_template_base\Reference\descriptionMission.hpp"
 	#endif
-	#if __has_include("\lt_template_gear\Loadout_VN\paramsVN.hpp")
+	#if __has_include("\lt_template_gear_vn\Loadout_VN\paramsVN.hpp")
 	#include "\lt_template_gear_vn\Loadout_VN\paramsVN.hpp"
 	#endif
 	class lt_Empty_03 
