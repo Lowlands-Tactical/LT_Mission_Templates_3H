@@ -6,9 +6,13 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=517;
+	mods[]=
+	{
+		"WBK_Zombies_AdvancedEditorSettings"
+	};
 	class ItemIDProvider
 	{
-		nextID=12167;
+		nextID=12172;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1360;
+		nextID=1390;
 	};
 	class Camera
 	{
-		pos[]={49.452141,85.715317,339.35074};
-		dir[]={0.48262095,-0.44562361,-0.75409722};
-		up[]={0.24026495,0.89517248,-0.37541357};
-		aside[]={-0.84233254,7.5128628e-007,-0.5390932};
+		pos[]={28.435997,27.293911,15.55823};
+		dir[]={0.54146552,-0.28431863,0.79119265};
+		up[]={0.16057529,0.9587307,0.23463373};
+		aside[]={0.82524997,1.5638943e-07,-0.56477338};
 	};
 };
 binarizationWanted=0;
@@ -47,36 +51,40 @@ addons[]=
 	"A3_Ui_F",
 	"ace_map",
 	"A3_Air_F_EPC_Plane_CAS_01",
+	"A3_Aegis_Air_F_Aegis_Plane_CAS_01",
 	"ace_realisticnames",
 	"A3_Armor_F_Beta_APC_Wheeled_01",
+	"A3_Aegis_Armor_F_Aegis_APC_Wheeled_01",
 	"ace_vehicle_damage",
 	"acre_sys_intercom",
 	"A3_Armor_F_EPC_MBT_01",
 	"ace_viewports",
 	"A3_Air_F_Beta_Heli_Attack_01",
 	"A3_Air_F_Beta_Heli_Transport_01",
+	"A3_Aegis_Air_F_Aegis_Heli_Transport_01",
 	"A3_Soft_F_Gamma_Truck_01",
-	"A3_Soft_F_Exp_Truck_01",
 	"ace_refuel",
-	"ace_repair",
 	"ace_cargo",
 	"ace_rearm",
+	"A3_Aegis_Characters_F_Aegis",
 	"ace_explosives",
-	"FIR_PilotCrewPack_US",
 	"ace_gforces",
 	"ace_parachute",
 	"A3_Armor_F_Beta_APC_Tracked_02",
+	"A3_Aegis_Armor_F_Aegis_APC_Tracked_02",
 	"A3_Soft_F_Gamma_Truck_02",
+	"A3_Aegis_Soft_F_Aegis_Truck_02",
 	"A3_Air_F_Heli_Heli_Transport_04",
 	"ace_fastroping",
 	"A3_Air_F_Beta_Heli_Attack_02",
 	"A3_Armor_F_Gamma_MBT_02",
-	"FIR_AirWeaponSystem_US",
 	"A3_Air_F_Jets_Plane_Fighter_02",
-	"Characters_f_lxWS",
 	"A3_Air_F_Beta_Heli_Transport_02",
+	"ace_repair",
 	"A3_Air_F_EPB_Heli_Light_03",
+	"A3_Aegis_Air_F_Aegis_Heli_Light_03",
 	"A3_Armor_F_EPB_APC_Tracked_03",
+	"A3_Aegis_Armor_F_Aegis_APC_Tracked_03",
 	"A3_Air_F_Jets_Plane_Fighter_04",
 	"A3_Armor_F_EPB_MBT_03",
 	"A3_Characters_F_Jets"
@@ -85,7 +93,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=40;
+		items=39;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -184,62 +192,64 @@ class AddonsMetaData
 		};
 		class Item15
 		{
+			className="A3_Aegis_Air_F_Aegis";
+			name="Arma 3 Aegis - Aircrafts";
+			author="Avery Kaiserin";
+			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
+		};
+		class Item16
+		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item17
+		{
+			className="A3_Aegis_Armor_F_Aegis";
+			name="Arma 3 Aegis - Armored Land Vehicles";
+			author="Avery Kaiserin";
+			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
+		};
+		class Item18
 		{
 			className="ace_vehicle_damage";
 			name="ACE3 - Vehicle Damage";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item17
+		class Item19
 		{
 			className="acre_sys_intercom";
 			name="ACRE2 - Vehicle Intercom";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item18
+		class Item20
 		{
 			className="A3_Armor_F_EPC";
 			name="Arma 3 Win Episode - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item21
 		{
 			className="ace_viewports";
 			name="ACE3 - Viewports";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item20
+		class Item22
 		{
 			className="A3_Air_F_Beta";
 			name="Arma 3 Beta - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item23
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item22
-		{
-			className="Blastcore_VEP";
-			name="Blastcore_VEP";
-		};
-		class Item23
-		{
-			className="A3_Soft_F_Exp";
-			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -252,24 +262,24 @@ class AddonsMetaData
 		};
 		class Item25
 		{
-			className="ace_repair";
-			name="ACE3 - Repair";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item26
-		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item27
+		class Item26
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
+		};
+		class Item27
+		{
+			className="A3_Aegis_Characters_F_Aegis";
+			name="Arma 3 Aegis - Characters and Clothing";
+			author="Avery Kaiserin";
+			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
 		};
 		class Item28
 		{
@@ -280,15 +290,17 @@ class AddonsMetaData
 		};
 		class Item29
 		{
-			className="FIR_PilotCrewPack_US";
-			name="FIR_PilotCrewPack_US";
-		};
-		class Item30
-		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
+		};
+		class Item30
+		{
+			className="A3_Aegis_Soft_F_Aegis";
+			name="Arma 3 Aegis - Unarmored Land Vehicles";
+			author="Avery Kaiserin";
+			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
 		};
 		class Item31
 		{
@@ -313,38 +325,33 @@ class AddonsMetaData
 		};
 		class Item34
 		{
-			className="FIR_AirWeaponSystem_US";
-			name="FIR_AirWeaponSystem_US";
-		};
-		class Item35
-		{
 			className="A3_Air_F_Jets";
 			name="Arma 3 Jets - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item36
+		class Item35
 		{
-			className="Characters_f_lxWS";
-			name="Arma 3 Western Sahara - Characters and Clothing";
-			author="Rotators Collective";
-			url="https://www.arma3.com";
+			className="ace_repair";
+			name="ACE3 - Repair";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
 		};
-		class Item37
+		class Item36
 		{
 			className="A3_Air_F_EPB";
 			name="Arma 3 Adapt Episode - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item37
 		{
 			className="A3_Armor_F_EPB";
 			name="Arma 3 Adapt Episode - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item39
+		class Item38
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
@@ -1029,6 +1036,19 @@ class Mission
 										};
 										class Attribute2
 										{
+											property="ALiVE_sup_artillery_artillery_wp";
+											expression="_this setVariable ['artillery_wp',_value,true];";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="0";
+												};
+											};
+										};
+										class Attribute3
+										{
 											property="ALiVE_sup_artillery_artillery_callsign";
 											expression="_this setVariable ['artillery_callsign',_value,true];";
 											class Value
@@ -1040,7 +1060,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute3
+										class Attribute4
 										{
 											property="ALiVE_sup_artillery_artillery_code";
 											expression="_this setVariable ['artillery_code',_value,true];";
@@ -1053,7 +1073,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute4
+										class Attribute5
 										{
 											property="ALiVE_sup_artillery_artillery_rockets";
 											expression="_this setVariable ['artillery_rockets',_value,true];";
@@ -1066,7 +1086,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute5
+										class Attribute6
 										{
 											property="ALiVE_sup_artillery_artillery_smoke";
 											expression="_this setVariable ['artillery_smoke',_value,true];";
@@ -1079,7 +1099,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute6
+										class Attribute7
 										{
 											property="ALiVE_sup_artillery_artillery_illum";
 											expression="_this setVariable ['artillery_illum',_value,true];";
@@ -1092,7 +1112,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute7
+										class Attribute8
 										{
 											property="ALiVE_sup_artillery_artillery_atmine";
 											expression="_this setVariable ['artillery_atmine',_value,true];";
@@ -1105,7 +1125,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute8
+										class Attribute9
 										{
 											property="ALiVE_sup_artillery_artillery_he";
 											expression="_this setVariable ['artillery_he',_value,true];";
@@ -1118,7 +1138,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute9
+										class Attribute10
 										{
 											property="ALiVE_sup_artillery_artillery_type";
 											expression="_this setVariable ['artillery_type',_value,true];";
@@ -1131,7 +1151,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute10
+										class Attribute11
 										{
 											property="ALiVE_sup_artillery_artillery_mine";
 											expression="_this setVariable ['artillery_mine',_value,true];";
@@ -1144,7 +1164,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute11
+										class Attribute12
 										{
 											property="ALiVE_sup_artillery_artillery_guided";
 											expression="_this setVariable ['artillery_guided',_value,true];";
@@ -1157,7 +1177,7 @@ class Mission
 												};
 											};
 										};
-										nAttributes=12;
+										nAttributes=13;
 									};
 								};
 								class Item3
@@ -1572,7 +1592,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="true";
+													value="false";
 												};
 											};
 										};
@@ -2231,40 +2251,40 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ALiVE_sys_profile_smoothSpawn";
-											expression="_this setVariable ['smoothSpawn',_value,true];";
+											property="ALiVE_sys_profile_virtualcombat_speedmodifier";
+											expression="_this setVariable ['virtualcombat_speedmodifier',_value,true];";
 											class Value
 											{
 												class data
 												{
 													singleType="STRING";
-													value="0.3";
+													value="0.75";
 												};
 											};
 										};
 										class Attribute1
 										{
-											property="ALiVE_sys_profile_spawnRadius";
-											expression="_this setVariable ['spawnRadius',_value,true];";
+											property="ALiVE_sys_profile_spawnTypeJetRadius";
+											expression="_this setVariable ['spawnTypeJetRadius',_value,true];";
 											class Value
 											{
 												class data
 												{
 													singleType="STRING";
-													value="1500";
+													value="0";
 												};
 											};
 										};
 										class Attribute2
 										{
-											property="ALiVE_sys_profile_pathfinding";
-											expression="_this setVariable ['pathfinding',_value,true];";
+											property="ALiVE_sys_profile_virtualcombat_rangemodifier";
+											expression="_this setVariable ['virtualcombat_rangemodifier',_value,true];";
 											class Value
 											{
 												class data
 												{
 													singleType="STRING";
-													value="false";
+													value="255";
 												};
 											};
 										};
@@ -2283,27 +2303,27 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="ALiVE_sys_profile_pathfindingSize";
-											expression="_this setVariable ['pathfindingSize',_value,true];";
+											property="ALiVE_sys_profile_pathfinding";
+											expression="_this setVariable ['pathfinding',_value,true];";
 											class Value
 											{
 												class data
 												{
 													singleType="STRING";
-													value="[600,75]";
+													value="false";
 												};
 											};
 										};
 										class Attribute5
 										{
-											property="ALiVE_sys_profile_spawnTypeJetRadius";
-											expression="_this setVariable ['spawnTypeJetRadius',_value,true];";
+											property="ALiVE_sys_profile_debug";
+											expression="_this setVariable ['debug',_value,true];";
 											class Value
 											{
 												class data
 												{
 													singleType="STRING";
-													value="0";
+													value="false";
 												};
 											};
 										};
@@ -2322,47 +2342,8 @@ class Mission
 										};
 										class Attribute7
 										{
-											property="ALiVE_sys_profile_spawnRadiusUAV";
-											expression="_this setVariable ['spawnRadiusUAV',_value,true];";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="-1";
-												};
-											};
-										};
-										class Attribute8
-										{
-											property="ALiVE_sys_profile_speedModifier";
-											expression="_this setVariable ['speedModifier',_value,true];";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="1.00";
-												};
-											};
-										};
-										class Attribute9
-										{
-											property="ALiVE_sys_profile_zeusSpawn";
-											expression="_this setVariable ['zeusSpawn',_value,true];";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="true";
-												};
-											};
-										};
-										class Attribute10
-										{
-											property="ALiVE_sys_profile_spawnTypeHeliRadius";
-											expression="_this setVariable ['spawnTypeHeliRadius',_value,true];";
+											property="ALiVE_sys_profile_spawnRadius";
+											expression="_this setVariable ['spawnRadius',_value,true];";
 											class Value
 											{
 												class data
@@ -2372,20 +2353,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute11
-										{
-											property="ALiVE_sys_profile_debug";
-											expression="_this setVariable ['debug',_value,true];";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="false";
-												};
-											};
-										};
-										class Attribute12
+										class Attribute8
 										{
 											property="ALiVE_sys_profile_persistent";
 											expression="_this setVariable ['persistent',_value,true];";
@@ -2398,7 +2366,20 @@ class Mission
 												};
 											};
 										};
-										class Attribute13
+										class Attribute9
+										{
+											property="ALiVE_sys_profile_speedModifier";
+											expression="_this setVariable ['speedModifier',_value,true];";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1.00";
+												};
+											};
+										};
+										class Attribute10
 										{
 											property="ALiVE_sys_profile_syncronised";
 											expression="_this setVariable ['syncronised',_value,true];";
@@ -2411,20 +2392,72 @@ class Mission
 												};
 											};
 										};
-										class Attribute14
+										class Attribute11
 										{
-											property="ALiVE_sys_profile_virtualcombat_speedmodifier";
-											expression="_this setVariable ['virtualcombat_speedmodifier',_value,true];";
+											property="ALiVE_sys_profile_smoothSpawn";
+											expression="_this setVariable ['smoothSpawn',_value,true];";
 											class Value
 											{
 												class data
 												{
 													singleType="STRING";
-													value="0.75";
+													value="0.3";
 												};
 											};
 										};
-										nAttributes=15;
+										class Attribute12
+										{
+											property="ALiVE_sys_profile_spawnRadiusUAV";
+											expression="_this setVariable ['spawnRadiusUAV',_value,true];";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="-1";
+												};
+											};
+										};
+										class Attribute13
+										{
+											property="ALiVE_sys_profile_zeusSpawn";
+											expression="_this setVariable ['zeusSpawn',_value,true];";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="true";
+												};
+											};
+										};
+										class Attribute14
+										{
+											property="ALiVE_sys_profile_spawnTypeHeliRadius";
+											expression="_this setVariable ['spawnTypeHeliRadius',_value,true];";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1500";
+												};
+											};
+										};
+										class Attribute15
+										{
+											property="ALiVE_sys_profile_pathfindingSize";
+											expression="_this setVariable ['pathfindingSize',_value,true];";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="[600,75]";
+												};
+											};
+										};
+										nAttributes=16;
 									};
 								};
 								class Item11
@@ -2596,6 +2629,19 @@ class Mission
 										};
 										class Attribute2
 										{
+											property="ALiVE_sup_artillery_artillery_wp";
+											expression="_this setVariable ['artillery_wp',_value,true];";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="0";
+												};
+											};
+										};
+										class Attribute3
+										{
 											property="ALiVE_sup_artillery_artillery_callsign";
 											expression="_this setVariable ['artillery_callsign',_value,true];";
 											class Value
@@ -2607,7 +2653,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute3
+										class Attribute4
 										{
 											property="ALiVE_sup_artillery_artillery_code";
 											expression="_this setVariable ['artillery_code',_value,true];";
@@ -2620,7 +2666,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute4
+										class Attribute5
 										{
 											property="ALiVE_sup_artillery_artillery_rockets";
 											expression="_this setVariable ['artillery_rockets',_value,true];";
@@ -2633,7 +2679,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute5
+										class Attribute6
 										{
 											property="ALiVE_sup_artillery_artillery_smoke";
 											expression="_this setVariable ['artillery_smoke',_value,true];";
@@ -2646,7 +2692,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute6
+										class Attribute7
 										{
 											property="ALiVE_sup_artillery_artillery_illum";
 											expression="_this setVariable ['artillery_illum',_value,true];";
@@ -2659,7 +2705,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute7
+										class Attribute8
 										{
 											property="ALiVE_sup_artillery_artillery_atmine";
 											expression="_this setVariable ['artillery_atmine',_value,true];";
@@ -2672,7 +2718,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute8
+										class Attribute9
 										{
 											property="ALiVE_sup_artillery_artillery_he";
 											expression="_this setVariable ['artillery_he',_value,true];";
@@ -2685,7 +2731,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute9
+										class Attribute10
 										{
 											property="ALiVE_sup_artillery_artillery_type";
 											expression="_this setVariable ['artillery_type',_value,true];";
@@ -2698,7 +2744,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute10
+										class Attribute11
 										{
 											property="ALiVE_sup_artillery_artillery_mine";
 											expression="_this setVariable ['artillery_mine',_value,true];";
@@ -2711,7 +2757,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute11
+										class Attribute12
 										{
 											property="ALiVE_sup_artillery_artillery_guided";
 											expression="_this setVariable ['artillery_guided',_value,true];";
@@ -2724,7 +2770,7 @@ class Mission
 												};
 											};
 										};
-										nAttributes=12;
+										nAttributes=13;
 									};
 								};
 								class Item16
@@ -3108,6 +3154,19 @@ class Mission
 										};
 										class Attribute2
 										{
+											property="ALiVE_sup_artillery_artillery_wp";
+											expression="_this setVariable ['artillery_wp',_value,true];";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="0";
+												};
+											};
+										};
+										class Attribute3
+										{
 											property="ALiVE_sup_artillery_artillery_callsign";
 											expression="_this setVariable ['artillery_callsign',_value,true];";
 											class Value
@@ -3119,7 +3178,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute3
+										class Attribute4
 										{
 											property="ALiVE_sup_artillery_artillery_code";
 											expression="_this setVariable ['artillery_code',_value,true];";
@@ -3132,7 +3191,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute4
+										class Attribute5
 										{
 											property="ALiVE_sup_artillery_artillery_rockets";
 											expression="_this setVariable ['artillery_rockets',_value,true];";
@@ -3145,7 +3204,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute5
+										class Attribute6
 										{
 											property="ALiVE_sup_artillery_artillery_smoke";
 											expression="_this setVariable ['artillery_smoke',_value,true];";
@@ -3158,7 +3217,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute6
+										class Attribute7
 										{
 											property="ALiVE_sup_artillery_artillery_illum";
 											expression="_this setVariable ['artillery_illum',_value,true];";
@@ -3171,7 +3230,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute7
+										class Attribute8
 										{
 											property="ALiVE_sup_artillery_artillery_atmine";
 											expression="_this setVariable ['artillery_atmine',_value,true];";
@@ -3184,7 +3243,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute8
+										class Attribute9
 										{
 											property="ALiVE_sup_artillery_artillery_he";
 											expression="_this setVariable ['artillery_he',_value,true];";
@@ -3197,7 +3256,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute9
+										class Attribute10
 										{
 											property="ALiVE_sup_artillery_artillery_type";
 											expression="_this setVariable ['artillery_type',_value,true];";
@@ -3210,7 +3269,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute10
+										class Attribute11
 										{
 											property="ALiVE_sup_artillery_artillery_mine";
 											expression="_this setVariable ['artillery_mine',_value,true];";
@@ -3223,7 +3282,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute11
+										class Attribute12
 										{
 											property="ALiVE_sup_artillery_artillery_guided";
 											expression="_this setVariable ['artillery_guided',_value,true];";
@@ -3236,7 +3295,7 @@ class Mission
 												};
 											};
 										};
-										nAttributes=12;
+										nAttributes=13;
 									};
 								};
 								class Item21
@@ -3556,7 +3615,7 @@ class Mission
 								class Attribute2
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -3614,7 +3673,7 @@ class Mission
 								class Attribute2
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -3685,7 +3744,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -3756,7 +3815,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -3827,7 +3886,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -3898,7 +3957,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -3969,7 +4028,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4040,7 +4099,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4067,6 +4126,7 @@ class Mission
 							};
 							id=212;
 							type="B_Heli_Attack_01_dynamicLoadout_F";
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -4124,7 +4184,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4151,6 +4211,7 @@ class Mission
 							};
 							id=213;
 							type="B_Heli_Attack_01_dynamicLoadout_F";
+							atlOffset=4.7683716e-07;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -4195,7 +4256,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4292,7 +4353,7 @@ class Mission
 								class Attribute5
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4389,7 +4450,7 @@ class Mission
 								class Attribute5
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4473,7 +4534,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4557,7 +4618,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4641,7 +4702,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4725,7 +4786,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4809,7 +4870,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -4893,7 +4954,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -5198,7 +5259,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -5314,7 +5375,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -5518,7 +5579,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -6454,7 +6515,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -7390,7 +7451,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -8326,7 +8387,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -8530,7 +8591,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -9466,7 +9527,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -10402,7 +10463,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -11338,7 +11399,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -11542,7 +11603,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -12478,7 +12539,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -13414,7 +13475,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -14350,7 +14411,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -14640,7 +14701,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -14930,7 +14991,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -15220,7 +15281,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -15510,7 +15571,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -15800,7 +15861,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -16090,7 +16151,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -16380,7 +16441,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -16670,7 +16731,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -16887,7 +16948,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -17104,7 +17165,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -17321,7 +17382,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -17538,7 +17599,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -17655,7 +17716,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -17772,7 +17833,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -17875,7 +17936,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -17959,7 +18020,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18043,7 +18104,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18127,7 +18188,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18153,7 +18214,7 @@ class Mission
 							{
 							};
 							id=8237;
-							type="O_Truck_02_ammo_F";
+							type="O_Truck_02_Ammo_F";
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18211,7 +18272,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18295,7 +18356,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18379,7 +18440,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18463,7 +18524,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18547,7 +18608,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18631,7 +18692,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18715,7 +18776,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18799,7 +18860,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18883,7 +18944,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -18967,7 +19028,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -19051,7 +19112,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -19135,7 +19196,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -19206,7 +19267,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -19277,7 +19338,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -19490,7 +19551,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -19580,7 +19641,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -19732,7 +19793,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -20368,7 +20429,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -21004,7 +21065,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -21640,7 +21701,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -21792,7 +21853,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -22428,7 +22489,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -23064,7 +23125,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -23700,7 +23761,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -23852,7 +23913,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -24488,7 +24549,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -25124,7 +25185,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -25760,7 +25821,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -25972,7 +26033,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -26184,7 +26245,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -26396,7 +26457,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -26608,7 +26669,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -26820,7 +26881,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -27032,7 +27093,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -27244,7 +27305,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -27456,7 +27517,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -27608,7 +27669,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -27760,7 +27821,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -27912,7 +27973,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -28064,7 +28125,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -28155,7 +28216,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -28246,7 +28307,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -28349,7 +28410,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -28433,7 +28494,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -28530,7 +28591,7 @@ class Mission
 								class Attribute5
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -28627,7 +28688,7 @@ class Mission
 								class Attribute5
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -28711,7 +28772,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -28795,7 +28856,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -28879,7 +28940,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -28963,7 +29024,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29034,7 +29095,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29105,7 +29166,7 @@ class Mission
 								class Attribute3
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29189,7 +29250,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29273,7 +29334,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29357,7 +29418,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29441,7 +29502,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29525,7 +29586,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29609,7 +29670,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29693,7 +29754,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29777,7 +29838,7 @@ class Mission
 								class Attribute4
 								{
 									property="ace_cookoff_enableAmmoCookoff";
-									expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+									expression="if (!_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true]}";
 									class Value
 									{
 										class data
@@ -29990,7 +30051,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -30080,7 +30141,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -30232,7 +30293,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -30868,7 +30929,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -31504,7 +31565,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -32140,7 +32201,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -32292,7 +32353,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -32928,7 +32989,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -33564,7 +33625,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -34200,7 +34261,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -34352,7 +34413,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -34988,7 +35049,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -35624,7 +35685,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -36260,7 +36321,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -36472,7 +36533,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -36684,7 +36745,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -36896,7 +36957,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -37108,7 +37169,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -37320,7 +37381,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -37532,7 +37593,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -37744,7 +37805,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -37956,7 +38017,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -38108,7 +38169,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -38395,7 +38456,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -38547,7 +38608,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -38638,7 +38699,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
@@ -38729,7 +38790,7 @@ class Mission
 								class Attribute0
 								{
 									property="groupID";
-									expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+									expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 									class Value
 									{
 										class data
