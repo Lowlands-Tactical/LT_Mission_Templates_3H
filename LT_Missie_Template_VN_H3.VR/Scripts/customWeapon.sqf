@@ -69,8 +69,7 @@ switch (side (_this select 0)) do
 		_handGunAttScope = [""];
 			// Launcher and ammo variants(optional)
 		_launcher = [""];
-		_launcher_MagAA = "";
-		_launcher_MagAT = "";
+		_launcher_Mags = [];
 			// Binocular
 		_binocular = [""];
 	};
@@ -130,8 +129,7 @@ switch (side (_this select 0)) do
 		_handGunAttScope = [""];
 			// Launcher and ammo variants(optional)
 		_launcher = [""];
-		_launcher_MagAA = "";
-		_launcher_MagAT = "";
+		_launcher_Mags = [];
 			// Binocular
 		_binocular = [""];
 	};
@@ -191,8 +189,7 @@ switch (side (_this select 0)) do
 		_handGunAttScope = [""];
 			// Launcher and ammo variants(optional)
 		_launcher = [""];
-		_launcher_MagAA = "";
-		_launcher_MagAT = "";
+		_launcher_Mags = [];
 			// Binocular
 		_binocular = [""];
 	};
