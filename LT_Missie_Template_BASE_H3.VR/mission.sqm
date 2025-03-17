@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1390;
+		nextID=1402;
 	};
 	class Camera
 	{
-		pos[]={28.435997,27.293911,15.55823};
-		dir[]={0.54146552,-0.28431863,0.79119265};
-		up[]={0.16057529,0.9587307,0.23463373};
-		aside[]={0.82524997,1.5638943e-07,-0.56477338};
+		pos[]={-47.304066,123.63605,-54.00716};
+		dir[]={0.57649082,-0.57877296,0.57696545};
+		up[]={0.40914273,0.81542718,0.40948349};
+		aside[]={0.70747101,-5.4349948e-07,-0.70688057};
 	};
 };
 binarizationWanted=0;
@@ -383,7 +383,7 @@ class ScenarioData
 	{
 		gameType="Coop";
 		minPlayers=1;
-		maxPlayers=388;
+		maxPlayers=100;
 	};
 };
 class CustomAttributes
@@ -508,7 +508,7 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={2,5,6};
+								position[]={4,5,6};
 							};
 							id=0;
 							type="ModuleCreateDiaryRecord_F";
@@ -600,7 +600,7 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4,5,6};
+								position[]={2,5,6};
 							};
 							id=1;
 							type="ModuleCreateDiaryRecord_F";
