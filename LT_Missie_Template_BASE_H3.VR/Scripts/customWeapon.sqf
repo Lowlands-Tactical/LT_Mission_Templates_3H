@@ -34,6 +34,7 @@ switch (side (_this select 0)) do
 			// Grenadier ammo(HE/SmokeWhite/SmokeGreen/SmokeRed) normal and IR variant
 		_itemsGL = ["","","",""];
 		_itemsGLNVG = ["","","",""];
+		_itemsGLAmt	= [8,6,4,4];
 			// DMR [Designated marksmen rifle (NO SNIPER)] weapon ammo and attachtments
 		_rifleMark = [""];
 		_rifleMark_Mags = "";
