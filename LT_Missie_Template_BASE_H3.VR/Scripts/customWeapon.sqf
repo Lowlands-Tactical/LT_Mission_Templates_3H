@@ -67,9 +67,15 @@ switch (side (_this select 0)) do
 		_handGunAttMuzzle = [""];
 		_handGunAttBipod = [""];
 		_handGunAttScope = [""];
-			// Launcher and ammo variants(optional)
+			// Launcher and ammo variants
 		_launcher = [""];
-		_launcher_Mags = [];
+		_launcher_Mags = [""];
+			// Launcher AA
+		_launcherAA = [""];
+		_launcherAA_Mags = [""];
+			// Heavy Machine Gun
+		_heavyAR = [""];
+		_heavyAR_Mags = "";
 			// Binocular
 		_binocular = [""];
 	};
@@ -129,7 +135,13 @@ switch (side (_this select 0)) do
 		_handGunAttScope = [""];
 			// Launcher and ammo variants(optional)
 		_launcher = [""];
-		_launcher_Mags = [];
+		_launcher_Mags = [""];
+			// Launcher AA
+		_launcherAA = [""];
+		_launcherAA_Mags = [""];
+			// Heavy Machine Gun
+		_heavyAR = [""];
+		_heavyAR_Mags = "";
 			// Binocular
 		_binocular = [""];
 	};
@@ -189,7 +201,13 @@ switch (side (_this select 0)) do
 		_handGunAttScope = [""];
 			// Launcher and ammo variants(optional)
 		_launcher = [""];
-		_launcher_Mags = [];
+		_launcher_Mags = [""];
+			// Launcher AA
+		_launcherAA = [""];
+		_launcherAA_Mags = [""];
+			// Heavy Machine Gun
+		_heavyAR = [""];
+		_heavyAR_Mags = "";
 			// Binocular
 		_binocular = [""];
 	};
